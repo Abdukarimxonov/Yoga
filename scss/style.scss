@@ -978,3 +978,87 @@ bottom: 183px;
       bottom: 32px;
    }
 }
+/*--------------------*/
+
+.help__wrapper {
+   padding-bottom: 297px;
+}
+.help__title-container {
+   position: relative;
+   width: 1510.62px;
+   height: 620.9px;
+   margin: 0px auto;
+}
+.help__title {
+   position: absolute;
+   top: 91.75px;
+   left: 189px;
+   z-index: 2;
+   line-height: 92px;
+   
+}
+.help__img-1 {
+   position: absolute;
+   width: 215px;
+height: 270px;
+   bottom: 0;
+   left: 0;
+}
+.help__img-1::after{
+   content: "";
+   width: 100px;
+   height: 100px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 50%;
+   background-image: url('../img/secrets/small-black-star.svg');
+   background-size: 34px 39px;
+   background-repeat: no-repeat;
+   background-position: center;
+   position: absolute;
+   right: 60px;
+   top: -48px;
+}
+.help__img-2 {
+   position: absolute;
+width: 264.6px;
+height: 430.85px;
+   top: 152px;
+   right: 51px;
+}
+.help__img-3 {
+   position: absolute;
+   top: 0;
+   right: 699px;
+   width: 300px;
+   height: 284px;
+   overflow: hidden;
+   background-image: url('../img/help/3.png');
+   background-position: center;
+   background-size: cover;
+}
+.help__title-in-pickture {
+   position: absolute;
+   top: 91.75px;
+   width: 1046px;
+   left: -322px;
+   z-index: 3;
+   line-height: 92px;
+}
+.help__link{
+   position: absolute;
+   top: 394px;
+   right: 351px;
+}
+.help{
+.span-1 {
+   display: block;
+}
+.span-5 {
+   margin-left: 126px;
+}
+
+.span-7 {
+   display: block;
+}
+
+}
