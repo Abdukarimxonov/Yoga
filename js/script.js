@@ -144,3 +144,41 @@ const swiper = new Swiper('.soul .swiper', {
    senteredSlides: false,
    slidesPerView: 1.6351,
 });
+const reviewsSwiper = new Swiper('.reviews .swiper', {
+   // Optional parameters
+   direction: 'horizontal',
+   loop: false,
+
+
+   // Navigation arrows
+   navigation: {
+      nextEl: '.reviews .swiper-button-next',
+      prevEl: '.reviews .swiper-button-prev',
+   },
+
+   // And if we need scrollbar
+   scrollbar: {
+      el: '.reviews .swiper-scrollbar',
+   },
+   senteredSlides: false,
+   slidesPerView: 1,
+});
+const senseisSwiper = new Swiper('.sensei .swiper', {
+   // Optional parameters
+   direction: 'horizontal',
+   loop: false,
+
+
+   // Navigation arrows
+   navigation: {
+      nextEl: '.sensei .swiper-button-next',
+      prevEl: '.sensei .swiper-button-prev',
+   },
+
+   // And if we need scrollbar
+   scrollbar: {
+      el: '.sensei .swiper-scrollbar',
+   },
+   senteredSlides: false,
+   slidesPerView: 3,
+});
