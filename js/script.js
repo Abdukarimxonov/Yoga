@@ -130,7 +130,20 @@ const swiper = new Swiper('.soul .swiper', {
    direction: 'horizontal',
    loop: false,
 
-
+   breakpoints: {
+      // when window width is >= 320px
+      320: {
+         slidesPerView: 1,
+      },
+      // when window width is >= 480px
+      480: {
+         slidesPerView: 1.3,
+      },
+      // when window width is >= 640px
+      1450: {
+         slidesPerView: 1.6351,
+      }
+   },
    // Navigation arrows
    navigation: {
       nextEl: '.soul .swiper-button-next',
@@ -142,7 +155,7 @@ const swiper = new Swiper('.soul .swiper', {
       el: '.soul .swiper-scrollbar',
    },
    senteredSlides: false,
-   slidesPerView: 1.6351,
+
 });
 const reviewsSwiper = new Swiper('.reviews .swiper', {
    // Optional parameters
@@ -181,4 +194,5 @@ const senseisSwiper = new Swiper('.sensei .swiper', {
    },
    senteredSlides: false,
    slidesPerView: 3,
+   slidesPerGroup: 1,
 });
