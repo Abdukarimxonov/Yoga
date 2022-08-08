@@ -838,11 +838,14 @@ font-weight: 400;
 font-size: 25px;
 line-height: 40px;
 text-transform: uppercase;
-opacity: 0.6;
+
 max-width: 720px;
    margin-top: 80px;
    float: right;
    margin-right: 95px;
+   p{
+      opacity: 0.6;
+   }
 }
 .secrets__samll-text {
    max-width: 308px;
@@ -851,8 +854,8 @@ font-style: normal;
 font-weight: 400;
 font-size: 17px;
 line-height: 22px;
-opacity: 0.6;
-float: right;
+p{ opacity: 0.6;
+}float: right;
 margin-right: 27px;
 margin-left: 53px;
 margin-top: 80px;
@@ -1860,7 +1863,7 @@ filter: blur(510px);
    }
    .secrets{
       padding-top: 150px;
-      padding-bottom: 150px;
+      padding-bottom: 190px;
    }
    .soul{
       padding-bottom: 150px;
@@ -1981,9 +1984,71 @@ line-height: 75px;
       top: 800px;
      left: 22.7vw;
    }
+   .secrets__title-bottom{
+      text-align: left;
+   }
+   .secrets::after{
+      display: none;
+   }
 }
 @media (max-width:1220px) {
-   
+   .secrets__text{
+      max-width: 100%;
+      padding: 0 37px;
+   }
+   .secrets__picture-1{
+      top: 739px;
+      right: 495px;
+      left: auto;
+   }
+   .secrets__picture-1::before{
+      display: none;
+   }
+   .secrets{
+      padding-top: 138px;
+   }
+   .secrets__picture-3{
+      display: none;
+   }
+   .secrets__picture-2{
+      width: 106px;
+      height: fit-content;
+      right: 48px;
+      bottom: 250px;
+   }
+   .secrets__picture-2::after{
+      width: 20px;
+      height: 24px;
+      bottom: -12px;
+      right: 19px;
+      left: auto;
+   }
+   .secrets__samll-text{
+      padding-top: 54px;
+      margin-left: auto;
+      max-width: 280px;
+      margin-right: 175px;
+      float: none;
+      
+   }
+   .secrets__title{
+      padding-left: 35px;
+      padding-right: 10px;
+   }
+   .secrets__wrapper{
+      padding-left: 0;
+   }
+   .secrets__text{
+      margin-right: 0;
+      img{
+         margin-top: 30px;
+      }
+      .secrets__picture-2{
+         text-align: center;
+         width: 100%;
+      }
+   }
+
 }
 @media (max-width:1000px) {
    .come__wrapper{
@@ -2023,7 +2088,9 @@ line-height: 75px;
       left: 18.22vw;
       @include adaptive-value("left", 140, 33);
   }
-
+  .secrets__picture-1{
+   top: 800px;
+  }
 }
 @media (max-width:690px) {
    .come__wrapper{
@@ -2110,7 +2177,50 @@ line-height: 75px;
       top: 180px;
       width: 120px;
    }
- 
+   .secrets__link a img{
+      width: 133px;
+   }
+   .secrets__text{
+      font-size: 16px;
+line-height: 23px;
+      margin-top: 40px;
+      padding: 0 10px;
+   }
+   .secrets{
+      padding-top: 100px;
+   }
+   .secrets__picture-2{
+      position: static;
+   }
+   .secrets__picture-2::after{
+      display: none;
+   }
+   .secrets__samll-text{
+      max-width: 100%;
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 30px;
+      img{
+         width: 300px;
+         margin-top: 40px;
+      }
+      .secrets__picture-1{
+         width: 100%;
+         text-align: center;
+      }
+   }
+   .secrets__link{
+      margin-top: 30px;
+      width: 100%;
+      text-align: center;
+      img{
+         margin: 0;
+      }
+      padding-bottom: 140px;
+   }
+   .secrets__picture-1{
+      position: static;
+   }
 }
 @media (max-width:450px) {
    .come__wrapper{
