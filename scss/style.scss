@@ -91,6 +91,11 @@ line-height: 30px;
 line-height: 75px;
    }
 }
+@media (max-width:690px) {
+   .title-h3{
+      font-size: 25px;
+   }
+}
 /*Обнуление*/
 *,
 *:before,
@@ -2000,12 +2005,36 @@ line-height: 75px;
       top: 739px;
       right: 495px;
       left: auto;
+      display: none;
    }
    .secrets__picture-1::before{
       display: none;
    }
+ 
+   .soul{
+      .slide__img{
+         flex:0 1 240px;
+         height: 406px;
+         img{
+            width: 100%;
+         }
+      }
+      .slide__content{
+         padding-left: 39px;
+         padding-right: 43px;
+      }
+   }
+
+}
+@media (max-width:1000px) {
+   .come__wrapper{
+      padding-right: 0;
+   }
    .secrets{
       padding-top: 138px;
+   }
+   .secrets__picture-1{
+      display: block;
    }
    .secrets__picture-3{
       display: none;
@@ -2048,17 +2077,16 @@ line-height: 75px;
          width: 100%;
       }
    }
-
-}
-@media (max-width:1000px) {
-   .come__wrapper{
-      padding-right: 0;
-   }
    .feed-back__first-picture{
       width: 156px;
       height: 228px;
       img{
          width: 100%;
+      }
+   }
+   .soul{
+      .soul__bottom-title{
+         margin-left: 149px;
       }
    }
 }
@@ -2091,6 +2119,11 @@ line-height: 75px;
   .secrets__picture-1{
    top: 800px;
   }
+  .soul{
+   .soul__bottom-title{
+      margin-left: 43px;
+   }
+  } 
 }
 @media (max-width:690px) {
    .come__wrapper{
@@ -2221,6 +2254,37 @@ line-height: 23px;
    .secrets__picture-1{
       position: static;
    }
+   .soul__title{
+      margin-bottom: 60px;
+   }
+
+   .soul{
+      .soul__wrapper{
+         padding: 0 10px;
+         width: 100%;
+      }
+      .swiper{
+         overflow: hidden;
+      }
+      .slide__container{
+         flex-wrap: wrap;
+         justify-content: center;
+
+      }
+      .slide__img{
+         height: auto;
+         flex: 0 1 300px;
+      }
+      .slide__title{
+         padding-top: 17px;
+         margin-bottom: 0;
+      }
+      .slide__link{
+         img{
+            width: 133px;
+         }
+      }
+   }
 }
 @media (max-width:450px) {
    .come__wrapper{
@@ -2244,6 +2308,11 @@ line-height: 23px;
    }
    .feed-back__first-picture{
       display: none;
+   }
+   .soul{
+      .slide__content{
+         padding: 0;
+      }
    }
 }
 

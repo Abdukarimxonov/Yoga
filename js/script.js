@@ -136,8 +136,8 @@ const swiper = new Swiper('.soul .swiper', {
          slidesPerView: 1,
       },
       // when window width is >= 480px
-      480: {
-         slidesPerView: 1.3,
+      650: {
+         slidesPerView: 1.1,
       },
       // when window width is >= 640px
       1450: {

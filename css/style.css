@@ -103,6 +103,11 @@ h4 {
     line-height: 75px;
   }
 }
+@media (max-width: 690px) {
+  .title-h3 {
+    font-size: 25px;
+  }
+}
 /*Обнуление*/
 *,
 *:before,
@@ -2407,12 +2412,34 @@ select.form__input {
     top: 739px;
     right: 495px;
     left: auto;
+    display: none;
   }
   .secrets__picture-1::before {
     display: none;
   }
+  .soul .slide__img {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 240px;
+            flex: 0 1 240px;
+    height: 406px;
+  }
+  .soul .slide__img img {
+    width: 100%;
+  }
+  .soul .slide__content {
+    padding-left: 39px;
+    padding-right: 43px;
+  }
+}
+@media (max-width: 1000px) {
+  .come__wrapper {
+    padding-right: 0;
+  }
   .secrets {
     padding-top: 138px;
+  }
+  .secrets__picture-1 {
+    display: block;
   }
   .secrets__picture-3 {
     display: none;
@@ -2456,17 +2483,15 @@ select.form__input {
     text-align: center;
     width: 100%;
   }
-}
-@media (max-width: 1000px) {
-  .come__wrapper {
-    padding-right: 0;
-  }
   .feed-back__first-picture {
     width: 156px;
     height: 228px;
   }
   .feed-back__first-picture img {
     width: 100%;
+  }
+  .soul .soul__bottom-title {
+    margin-left: 149px;
   }
 }
 @media (max-width: 920px) {
@@ -2496,6 +2521,9 @@ select.form__input {
   }
   .secrets__picture-1 {
     top: 800px;
+  }
+  .soul .soul__bottom-title {
+    margin-left: 43px;
   }
 }
 @media (max-width: 690px) {
@@ -2629,6 +2657,36 @@ select.form__input {
   .secrets__picture-1 {
     position: static;
   }
+  .soul__title {
+    margin-bottom: 60px;
+  }
+  .soul .soul__wrapper {
+    padding: 0 10px;
+    width: 100%;
+  }
+  .soul .swiper {
+    overflow: hidden;
+  }
+  .soul .slide__container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .soul .slide__img {
+    height: auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 300px;
+            flex: 0 1 300px;
+  }
+  .soul .slide__title {
+    padding-top: 17px;
+    margin-bottom: 0;
+  }
+  .soul .slide__link img {
+    width: 133px;
+  }
 }
 @media (max-width: 450px) {
   .come__wrapper {
@@ -2652,5 +2710,8 @@ select.form__input {
   }
   .feed-back__first-picture {
     display: none;
+  }
+  .soul .slide__content {
+    padding: 0;
   }
 }
