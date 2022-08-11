@@ -95,6 +95,9 @@ line-height: 75px;
    .title-h3{
       font-size: 25px;
    }
+   h4{
+      font-size: 22px;
+   }
 }
 /*Обнуление*/
 *,
@@ -1328,6 +1331,9 @@ height: 12.44px;
    margin-bottom: 80px;
    p{
       padding-left: 237px;
+      br{
+         display: none;
+      }
    }
    p:nth-child(2){
       margin-bottom: 38.75px;
@@ -1378,10 +1384,11 @@ height: 12.44px;
 }
 .check-list__checkbox {
    margin-right: 7px;
- 
+   cursor: pointer;
 }
 .checkbox{
    opacity: 0.6;
+   display: flex;
 }
 .check-list__btn{
    background-color: transparent;
@@ -2011,6 +2018,13 @@ line-height: 75px;
    .schedule__list::after{
       display: none;
    }
+   .pay__row{
+      margin-left: 300px;
+   }
+   .pay__img-2{
+      left: -50px;
+   }
+
 }
 @media (max-width:1220px) {
    .secrets__text{
@@ -2054,6 +2068,38 @@ line-height: 75px;
    }
    .help__title-in-pickture{
       left: -411px;
+   }
+   .pay__row{
+      margin-left: 250px;
+      margin-right: 25px;
+   }
+   .pay__column{
+      min-width: 380px;
+   }
+   .pay__column::before{
+      left: 5px;
+   }
+   .pay__column{
+      padding: 0 5px 0 47px;
+   }
+   .pay__column-title{
+      white-space: nowrap;
+   }
+   .pay__img-1{
+      display: none;
+   }
+   .check-list__second-img{
+      display: none;
+   }
+   .check-list__title{
+      padding-left: 90px;
+      p{
+         padding-left: 137px;
+      }
+   }
+
+   .check-list__form{
+      margin-left: 227px;
    }
 }
 @media (max-width:1000px) {
@@ -2161,7 +2207,10 @@ line-height: 75px;
    .schedule__container{
       padding-top: 145px;
    }
-}
+   }
+   .check-list__first-img{
+      display: none;
+   }
 }
 @media (max-width:920px) {
    .come__title-top {
@@ -2173,6 +2222,39 @@ line-height: 75px;
   .shedule__link-more-info{
     font-size: 0;
   }
+  .pay__title{
+   padding-left: 34px;
+   p{
+      padding-left: 140px;
+   }
+  }
+  .pay__img-2{
+   display: none;
+  }
+  .pay__row{
+   margin-left: 50px;
+   margin-right: 50px;
+   align-items: center;
+   justify-content: center;
+  }
+  .check-list__title{
+   padding: 0 28px;
+   p{
+      br{
+         display: block;
+      }
+   }
+  }
+  .check-list__form{
+   margin-left: 165px;
+  }
+  .check-list__title p:nth-child(2) {
+   margin-bottom: 29px;
+   }
+   .check-list__title p:nth-child(3) {
+      margin-bottom: 29px;
+  }
+
 }
 @media (max-width:800px) {
    .come::after{
@@ -2217,6 +2299,9 @@ line-height: 75px;
    bottom: 0;
    left: 0;
    right: auto;
+  }
+  .check-list__container{
+   margin-right: 27px;
   }
 }
 @media (max-width:710px) {
@@ -2316,7 +2401,7 @@ line-height: 75px;
    }
    .secrets__text{
       font-size: 16px;
-line-height: 23px;
+      line-height: 23px;
       margin-top: 40px;
       padding: 0 10px;
    }
@@ -2442,7 +2527,7 @@ line-height: 23px;
       top: 85px;
       bottom: auto;
       width: 173.78px;
-height: 176.52px;
+      height: 176.52px;
    }
    .schedule__top-all-link{
       width: auto;
@@ -2465,6 +2550,52 @@ height: 176.52px;
    }
    .schedule__wrapper{
       padding: 0 15px;
+   }
+   .pay__title{
+      padding-top: 0;
+      p{
+         padding-left: 43px;
+      }
+   }
+   .pay__row{
+      margin-left: 0;
+      margin-right: 0;
+   }
+   .pay{
+      margin-bottom: 125px;
+   }
+   .check-list__title{
+      padding: 0 43px;
+      p{
+         padding-left: 43px;
+         img{
+            width: 52px;
+         }
+      }
+   }
+   .check-list__title p:nth-child(2) {
+      margin-bottom: 11px;
+  }
+  .check-list__title p:nth-child(3) {
+   margin-bottom: 15px;
+}
+   .check-list__form{
+      margin-left: 86px;
+      flex-wrap: wrap;
+
+   }
+   .check-list__container{
+      flex: 0 1 100%;
+      margin-bottom: 33px;
+      max-width: 234px;
+   }
+   .check-list__input{
+      width: 234px;
+   }
+   .check-list__btn{
+      img{
+      width: 133px;
+      }
    }
 }
 @media (max-width:450px) {
@@ -2503,6 +2634,25 @@ height: 176.52px;
    .shedule__link-more-info{
       font-size: 15px;
       color: #fff;
+   }
+   .pay__column{
+      padding: 50px 5px 0 0px ;
+      margin-left: 10px;
+      min-width: 0px;
+      flex: 0 1 100%;
+   }
+   .pay__column::before{
+      top: 0;
+      left: 0;
+   }
+   .check-list__title{
+      padding: 0 9px;
+      p{
+         padding: 0 34px;
+      }
+   }
+   .check-list__form{
+      margin-left: 45px;
    }
 }
 
