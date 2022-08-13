@@ -193,6 +193,24 @@ const senseisSwiper = new Swiper('.sensei .swiper', {
       el: '.sensei .swiper-scrollbar',
    },
    senteredSlides: false,
-   slidesPerView: 3,
    slidesPerGroup: 1,
+   spaceBetween: 30,
+   breakpoints: {
+      // when window width is >= 320px
+      320: {
+         slidesPerView: 1.2,
+      },
+      // when window width is >= 480px
+      650: {
+         slidesPerView: 2,
+      },
+      // when window width is >= 640px
+      900: {
+
+         slidesPerView: 2.5,
+      },
+      1200: {
+         slidesPerView: 3,
+      },
+   },
 });

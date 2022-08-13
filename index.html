@@ -481,8 +481,8 @@
       <div class="reviews">
          <div class="reviews__wrapper">
             <h2 class="reviews__title title-h2 dark">
-               За нас все скажут
-               <p>наши клиенты</p>
+               За нас все <span class="target"></span> скажут
+               <p>наши клиенты</p><br data-da=".reviews .target, ,last">
             </h2>
             <div class="reviews__images">
                <div class="reviews__img1">
@@ -495,15 +495,16 @@
                   <img src="img/reviews/3.png" alt="">
                </div>
                <div class="reviews__img4">
-                  <img src="img/reviews/4.png" alt="">
+                  <picture>
+                     <source media="(min-width: 1000px)" srcset="img/reviews/4.png">
+                     <img src="img/reviews/44.png" alt="">
+                  </picture>
+
                </div>
 
             </div>
-            <!-- Slider main container -->
             <div class="swiper">
-               Additional required wrapper
                <div class="swiper-wrapper">
-                  Slides
                   <div class="swiper-slide">
                      <h4 class="review__author typesetting dark">Евгения Попова</h4>
                      <p class="review__author-instagram">
@@ -608,7 +609,8 @@
       <div class="sensei dark">
          <div class="sensei__wrapper">
             <div class="sensei__top">
-               <h2 class="sensei__title title-h2 dark">Наши лучшие <p>сэнсэи :)</p>
+               <h2 class="sensei__title title-h2 dark">Наши <span>лучшие</span>
+                  <p>сэнсэи :)</p>
                </h2>
                <p class="sensei__top-text typesetting dark">В нашей студии с вами будут работать высококвалифицированные
                   специалисты,
