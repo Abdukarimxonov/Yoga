@@ -836,7 +836,11 @@
                   <img src="img/form/2.png" alt="">
                </div>
                <div class="image3">
-                  <img src="img/form/3.png" alt="">
+                  <picture>
+                     <source media="(min-width: 1000px)" srcset="img/form/3.png">
+                     <img src="img/form/33.png" alt="">
+                  </picture>
+
                </div>
             </div>
          </div>
@@ -930,17 +934,17 @@
       <div class="footer-bottom">
          <div class="footer-bottom__wrapper">
             <div class="footer-bottom__row">
-               <div class="footer-bottom__column footer__logo">
-                  <a href="">Yoga-Go</a>
+               <div class="footer-bottom__column ">
+                  <a class="footer__logo" href="">Yoga-Go</a>
                </div>
-               <div class="footer-bottom__column">
+               <div class="footer-bottom__column" data-da=".footer-bottom__column,1000,last">
                   <ul class="footer__copyright">
                      <li><a class="typesetting underline" href="">Политика конфиденциальности</a></li>
                      <li><a class="typesetting underline" href="">Пользовательское соглашения</a></li>
                      <li><a class="typesetting underline" href="">Согласие на обработку персональных данных</a></li>
                   </ul>
                </div>
-               <div class="footer-bottom__column">
+               <div class="footer-bottom__column target">
                   <h4 class="footer__column-title">
                      Телефон
                   </h4>
@@ -952,7 +956,7 @@
                   </ul>
                </div>
 
-               <div class="footer-bottom__column">
+               <div class="footer-bottom__column" data-da=".footer-bottom__column.target,750,last">
                   <h4 class="footer__column-title">
                      Наш адрес
                   </h4>
