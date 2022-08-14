@@ -23,10 +23,10 @@
             <div class="header__menu">
                <div class="header__menu-icon" onclick="toggler(this)"><span></span></div>
                <ul class="header__menu-list">
-                  <li class="header__menu-link"><a class="typesetting" href="#">Услуги</a></li>
-                  <li class="header__menu-link"><a class="typesetting" href="#">Цены</a></li>
-                  <li class="header__menu-link"><a class="typesetting" href="#">Отзывы</a></li>
-                  <li class="header__menu-link"><a class="typesetting" href="#">Контакты</a></li>
+                  <li class="header__menu-link"><a class="typesetting" href="#soul">Услуги</a></li>
+                  <li class="header__menu-link"><a class="typesetting" href="#pay">Цены</a></li>
+                  <li class="header__menu-link"><a class="typesetting" href="#reviews">Отзывы</a></li>
+                  <li class="header__menu-link"><a class="typesetting" href="#footer">Контакты</a></li>
                </ul>
             </div>
             <ul class="header__contacts" data-da=".header__menu-list,590,last">
@@ -206,7 +206,7 @@
             </div>
          </div>
       </div>
-      <div class="soul">
+      <div id="soul" class="soul">
          <div class="soul__wrapper">
             <div class="soul__title">
                <h2 class="soul__top-title title-h2 dark">Как<span class="in-black-stared">о</span>е направление</h2>
@@ -419,7 +419,7 @@
          </div>
       </div>
    </div>
-   <div class="pay">
+   <div id="pay" class="pay">
       <div class="pay__wrapper">
          <h2 class="pay__title title-h2"> Какой ваш <p> идеальный </p>
             <p> абонемент</p>
@@ -478,7 +478,7 @@
       </div>
    </div>
    <section class="white">
-      <div class="reviews">
+      <div class="reviews" id="reviews">
          <div class="reviews__wrapper">
             <h2 class="reviews__title title-h2 dark">
                За нас все <span class="target"></span> скажут
@@ -846,7 +846,7 @@
          </div>
       </div>
    </section>
-   <footer class="footer">
+   <footer class="footer" id="footer">
       <div class="footer-top__wrapper">
          <h2 class="footer__title title-h2">
             Свяжитесь с нами
@@ -971,7 +971,9 @@
    </footer>
 
    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
    <script src="js/script.js"></script>
+
 </body>
 
 </html>

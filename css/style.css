@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*Повторное использование стилей*/
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   padding: 0 35px;
   max-width: 1200px;

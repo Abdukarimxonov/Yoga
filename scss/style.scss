@@ -5,6 +5,9 @@ $maxWidth: 1920;
    $addSize: $startSize - $minSize;
    #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
 }
+html{
+   scroll-behavior: smooth;
+}
 .wrapper {
    padding: 0 35px;
    max-width: 1200px;
