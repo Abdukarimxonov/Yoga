@@ -251,3 +251,13 @@ if (menuLinks.length > 0) {
       }
    }
 }
+const toUp = document.querySelector('.to-up');
+
+window.addEventListener('scroll', function () {
+   if (pageYOffset > 1500) {
+      toUp.classList.add('active');
+   }
+   if (pageYOffset < 1500) {
+      toUp.classList.remove('active');
+   }
+});
