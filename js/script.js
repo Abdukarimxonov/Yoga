@@ -1,7 +1,4 @@
-function toggler(x) {
-   x.classList.toggle("active");
-   document.querySelector(".header__menu-list").classList.toggle("active");
-}
+
 "use strict";
 function DynamicAdapt(type) {
    this.type = type;
@@ -215,16 +212,42 @@ const senseisSwiper = new Swiper('.sensei .swiper', {
    },
 });
 
-$(document).ready(function () {
-   $("a").on('click', function (event) {
-      if (this.hash !== "") {
-         event.preventDefault();
-         var hash = this.hash;
-         $('html, body').animate({
-            scrollTop: $(hash).offset().top
-         }, 800, function () {
-            window.location.hash = hash;
-         });
-      }
+
+/*Меню бургер */
+const iconMenu = document.querySelector('.header__menu-icon');
+const menuBody = document.querySelector('.header__menu-list');
+if (iconMenu) {
+   iconMenu.addEventListener("click", function (e) {
+      iconMenu.classList.toggle('active');
+      menuBody.classList.toggle('active');
    });
-});
+}
+
+
+/*Прокрутка при клике*/
+const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
+if (menuLinks.length > 0) {
+   menuLinks.forEach(menuLink => {
+      menuLink.addEventListener("click", onMenuLinkClick);
+   });
+
+   function onMenuLinkClick(e) {
+      const menuLink = e.target;
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+         const gotoBlock = document.querySelector(menuLink.dataset.goto);
+         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
+
+         if (iconMenu.classList.contains('active')) {
+            document.body.classList.remove('lock');
+            iconMenu.classList.remove('active');
+            menuBody.classList.remove('active');
+         }
+
+         window.scrollTo({
+            top: gotoBlockValue,
+            behavior: "smooth"
+         });
+         e.preventDefault();
+      }
+   }
+}
